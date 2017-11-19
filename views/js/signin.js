@@ -1,13 +1,13 @@
 function validate(event){
-  if(this.email.value.length == 0){
+  if(this.username.value.length == 0){
     event.preventDefault();
     $("#alert-placeholder").html(`
       <br/>
       <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        Please enter an email.
+        Please enter a username.
       </div>
       `);
-    $("#email").focus();
+    $("#username").focus();
     return;
   }
 
@@ -16,7 +16,7 @@ function validate(event){
     $("#alert-placeholder").html(`
       <br/>
       <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        Please enter a valid password.s
+        Please enter a valid password.
       </div>
       `);
     $("#password").focus();
@@ -24,5 +24,5 @@ function validate(event){
   }
 
   this.password.value = santize(this.password.value);
-  this.email.value = santize(this.email.value);
+  this.username.value = santize(this.username.value);
 }

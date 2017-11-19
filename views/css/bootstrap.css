@@ -45,6 +45,10 @@
   border: solid #111 1px;
 }
 
+a:hover{
+    text-decoration: none !important;
+}
+
 .white-bg:hover{
 box-shadow: 0px 0px 7px 2px #888888;
 }

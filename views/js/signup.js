@@ -31,6 +31,18 @@ function validate(event){
     $("#alert-placeholder").html("");
   }
 
+  if(this.username.value.length < 5){
+    event.preventDefault();
+    $("#alert-placeholder").html(`
+      <br/>
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        Username must be at least 5 characters long.
+      </div>
+      `);
+      $("#username").focus();
+      return;
+  }
+
   this.password.value = sanitize(this.password.value);
   this.email.value = sanitize(this.email.value);
   this.password1.value = sanitize(this.email.value);

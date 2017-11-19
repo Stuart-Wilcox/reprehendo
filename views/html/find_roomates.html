@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Roomify</title>
+    <title>Reprehendo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
      <script src='/js/jquery.js'></script>
@@ -12,7 +12,7 @@
   <body>
     <div class="container-fluid">
       <div class="page-header">
-        <h1>Roomify</h1>
+        <h1>Reprehendo</h1>
         <a href="/">Logout</a>
       </div>
       <br/>
@@ -27,11 +27,27 @@
         <div class="col-4">
           <div class="card">
             <div class="card-header">
-              <form class="form-inline" method="post" onsubmit="validate(event)">
+              <form method="post" onsubmit="validate(event)">
                 <div class="form-group">
-                  <label for="q">Username: &nbsp; &nbsp;</label>
-                  <input type="text" name="q" id="q" class="form-control" />
-                  &nbsp;
+                  <label for="city">City</label>
+                  <input type="text" name="city" id="city" class="form-control"/>
+                  <label for="province">Province</label>
+                  <select name="province" id="province" class="form-control">
+                    <option>AB</option>
+                    <option>BC</option>
+                    <option>MB</option>
+                    <option>SK</option>
+                    <option>ON</option>
+                    <option>QC</option>
+                    <option>NB</option>
+                    <option>NS</option>
+                    <option>PEI</option>
+                    <option>NL</option>
+                    <option>NWT</option>
+                    <option>YK</option>
+                    <option>NT</option>
+                  </select>
+                  <br />
                   <button role="button" type="submit" class="btn btn-primary">Search</button>
                 </div>
               </form>
