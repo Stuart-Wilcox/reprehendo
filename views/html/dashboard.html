@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Roomify</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+     <script src='/js/jquery.js'></script>
+     <script src="/js/bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="page-header">
+        <h1>Roomify</h1>
+        <a href="/">Logout</a>
+      </div>
+      <br/>
+
+      <div class="jumbotron">
+        <h1>Welcome {{username}} </h1>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <a id="find_roommates"  href="#"><div class="jumbotron white-bg">
+            <h1>Find a roommate</h1>
+          </div></a>
+        </div>
+        <div class="col-4">
+          <a id="schedule_chores" href='#'><div class="jumbotron white-bg">
+            <h1>Schedule chores</h1>
+          </div></a>
+        </div>
+        <div class="col-4">
+          <a href="#" id="messageboard"><div class="jumbotron white-bg">
+            <h1>Roommate Message Board</h1>
+          </div></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <a id="add_location_roommates" href="#"><div class="jumbotron white-bg">
+            <h1>Add current location and roommates</h1>
+          </div></a>
+        </div>
+        <div class="col-4">
+          <a id="view_chores" href="#"><div class="jumbotron white-bg">
+            <h1>View chore schedule</h1>
+          </div></a>
+        </div>
+        <div class="col-4">
+          <a id="emergency_contact" href="#"><div class="jumbotron white-bg">
+            <h1>Emergency Contact</h1>
+          </div></a>
+        </div>
+      </div>
+    </div>
+         <script src="/js/dashboard.js"></script>
+  </body>
+</html>
